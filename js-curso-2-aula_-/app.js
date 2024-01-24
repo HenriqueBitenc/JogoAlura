@@ -34,7 +34,7 @@ function verificarChute() {
 }
 
 function gerarNumeroAleatorio() {
-let numeroSorteado = parseInt(Math.random() * 1000 + 1);
+let numeroSorteado = parseInt(Math.random() * 100 + 1);
 if (listaNumeroSorteados.includes(numeroSorteado)){
   return gerarNumeroAleatorio()
 } else{
@@ -58,5 +58,5 @@ function reiniciarJogo(){
 
 function exibirMensagemInicial(){
 exibirTextoNaTela('h1','Jogo do número secreto!');
-exibirTextoNaTela('p','Escolha um numero de 1 a 1000!');
+exibirTextoNaTela('p','Escolha um numero de 1 a 100!');
 }
